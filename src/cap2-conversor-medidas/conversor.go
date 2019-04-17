@@ -37,7 +37,7 @@ func converterValor(valoresOrigem []string, unidadeOrigem string) {
 	for i, v := range valoresOrigem {
 		valorOrigem, err := strconv.ParseFloat(v, 64)
 		if err != nil {
-			fmt.Println("O valor %s ma posição %d não é um número válido!", v, i)
+			fmt.Printf("O valor %s ma posição %d não é um número válido!", v, i)
 			os.Exit(1)
 		}
 		var valorDestino float64
